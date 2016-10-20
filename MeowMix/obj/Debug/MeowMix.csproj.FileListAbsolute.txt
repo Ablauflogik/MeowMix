@@ -1,0 +1,24 @@
+\\iam.local\user\juan.montenegro\visual studio 2015\Projects\MeowMix\MeowMix\bin\Debug\MeowMix.exe.config
+\\iam.local\user\juan.montenegro\visual studio 2015\Projects\MeowMix\MeowMix\bin\Debug\MeowMix.exe
+\\iam.local\user\juan.montenegro\visual studio 2015\Projects\MeowMix\MeowMix\bin\Debug\MeowMix.pdb
+\\iam.local\user\juan.montenegro\visual studio 2015\Projects\MeowMix\MeowMix\obj\Debug\MeowMix.csprojResolveAssemblyReference.cache
+\\iam.local\user\juan.montenegro\visual studio 2015\Projects\MeowMix\MeowMix\obj\Debug\MeowMix.exe
+\\iam.local\user\juan.montenegro\visual studio 2015\Projects\MeowMix\MeowMix\obj\Debug\MeowMix.pdb
+I:\MeowMix\MeowMix\bin\Debug\MeowMix.exe.config
+I:\MeowMix\MeowMix\obj\Debug\MeowMix.exe
+I:\MeowMix\MeowMix\obj\Debug\MeowMix.pdb
+I:\MeowMix\MeowMix\obj\Debug\MeowMix.csprojResolveAssemblyReference.cache
+I:\MeowMix\MeowMix\bin\Debug\MeowMix.exe
+I:\MeowMix\MeowMix\bin\Debug\MeowMix.pdb
+D:\MeowMix\MeowMix\bin\Debug\MeowMix.exe.config
+D:\MeowMix\MeowMix\obj\Debug\MeowMix.exe
+D:\MeowMix\MeowMix\obj\Debug\MeowMix.pdb
+D:\MeowMix\MeowMix\bin\Debug\MeowMix.exe
+D:\MeowMix\MeowMix\bin\Debug\MeowMix.pdb
+D:\MeowMix\MeowMix\obj\Debug\MeowMix.csprojResolveAssemblyReference.cache
+E:\MeowMix\MeowMix\bin\Debug\MeowMix.exe.config
+E:\MeowMix\MeowMix\obj\Debug\MeowMix.exe
+E:\MeowMix\MeowMix\obj\Debug\MeowMix.pdb
+E:\MeowMix\MeowMix\bin\Debug\MeowMix.exe
+E:\MeowMix\MeowMix\bin\Debug\MeowMix.pdb
+E:\MeowMix\MeowMix\obj\Debug\MeowMix.csprojResolveAssemblyReference.cache
