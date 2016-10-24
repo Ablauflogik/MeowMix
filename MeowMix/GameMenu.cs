@@ -33,15 +33,17 @@ namespace MeowMix
 
             Console.WriteLine("Choose a faction to begin your mission!\n");
             Console.Write("Choose between the FelineWarrior, Human Hunter or k9 faction\n");
+            userInput = Console.ReadLine().Trim();
+            //failed attempt to get rid of spaces when choosing a faction. Ex. feline warrior would be a valid input*
             userInput = Console.ReadLine().ToLower();
 
 
-            if (userInput == "felinewarrior")
+             if (userInput == "felinewarrior")
             {
                 string message = "NIIIIIICE! This factions uses hulking Whisker Brute and dander infested Fur Bawlz as its field troops. They have mind tricks naturally produced by their cuteness";
                 Console.WriteLine(message);
                 Console.ReadLine();
-                GamePartOne();
+                storyOfCat();
                 
             }
             else if (userInput == "human hunter")
@@ -49,7 +51,7 @@ namespace MeowMix
                 string message = "Interesting choice, you have chosen to be a one man army. This pet hater of a human being roams the earth bagging and tagging stray pets. You will be frowned upon.";
                 Console.WriteLine(message);
                 Console.ReadLine();
-                GamePartOne();
+                storyOfHuman();
             }
             else if (userInput == "k9")
             {
@@ -57,7 +59,7 @@ namespace MeowMix
               
                 Console.WriteLine(message);
                 Console.ReadLine();
-                GamePartTwo();
+                storyOfk9();
             }
             else 
             {
@@ -66,31 +68,29 @@ namespace MeowMix
                 Console.WriteLine(message);
                 Menu();
             }
-            Console.WriteLine("\n Welcome to the game " + userInput + "!");
+            Console.WriteLine("\n Welcome to the game " + userInput + " member!");
             Console.ReadLine();
         }
 
-        public static void GamePartOne()
+        public static void storyOfk9()
         {
             Console.Clear();
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-
-            //Another choice like above
+            Console.WriteLine("The laxative based catnip batch has been completed. You’re inside the room of a SpecOps feline. How will you proceed?");
         }
 
 
-        public static void GamePartTwo()
+        public static void storyOfHuman()
         {
             Console.Clear();
-            Console.WriteLine("sdffgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fsdfsfgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
-            Console.WriteLine("fgfjkasdgbfjksdbkfjbsdjkfbsdbfjksdbjkfbsdjkbfksd");
+            Console.WriteLine("From the corner of your eye you spot a stray dog and cat on opposite sides of the street.After finishing your taco burrito supreme with extra sour cream and fries, which will you go snatch up ? ");
+
+            //Another choice like above
+        }
+        public static void storyOfCat()
+        {
+            Console.Clear();
+            Console.WriteLine("You have successfully infiltrated the backyard. The leader of the Elite k9 unit lays in his dog house fast asleep. What’s your move?");
+            
 
             //Another choice like above
         }
