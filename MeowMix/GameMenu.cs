@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,8 @@ namespace MeowMix
        public static void Menu()
         {
             Console.Clear();
-            string userInput; 
+            string userInput;
+            Console.Title = "Mission";
             Console.Title = "MeowMix";
             Console.ForegroundColor = ConsoleColor.DarkRed;
             string title = @"                                                                            
@@ -26,23 +27,37 @@ namespace MeowMix
             :::     ::    :: ::::  ::::: ::   :::: :: :::   :::     ::    ::   ::  :::  
              :      :    : :: ::    : :  :     :: :  : :     :      :    :     :   ::   ";
             Console.WriteLine(title);           
-           // Console.ReadLine();
-
-
             Console.WriteLine("\n Cats and dogs are at constant war. They don't want to kill but rather piss eachother off...You must decide which faction is best suited for you and continue the cycle of peskering one another!\n");
-
             Console.WriteLine("Choose a faction to begin your mission!\n");
             Console.Write("Choose between the FelineWarrior, Human Hunter or k9 faction\n");
-            userInput = Console.ReadLine().Trim();
-            //failed attempt to get rid of spaces when choosing a faction. Ex. feline warrior would be a valid input*
+            // userInput = Console.ReadLine().Trim();  //enter code to remove spaces
             userInput = Console.ReadLine().ToLower();
+           
+
+           if (userInput == "felinewarrior" + "human hunter" + "k9")
+            {
+                string titleM = @"
+
+ ███▄ ▄███▓ ██▓  ██████   ██████  ▒█████   ███▄    █      ██████ ▄▄▄█████▓ ▄▄▄       ██▀███  ▄▄▄█████▓
+▓██▒▀█▀ ██▒▓██▒▒██    ▒ ▒██    ▒ ▒██▒  ██▒ ██ ▀█   █    ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▓██ ▒ ██▒▓  ██▒ ▓▒
+▓██    ▓██░▒██▒░ ▓██▄   ░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒   ░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▓██ ░▄█ ▒▒ ▓██░ ▒░
+▒██    ▒██ ░██░  ▒   ██▒  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒     ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ▒██▀▀█▄  ░ ▓██▓ ░ 
+▒██▒   ░██▒░██░▒██████▒▒▒██████▒▒░ ████▓▒░▒██░   ▓██░   ▒██████▒▒  ▒██▒ ░  ▓█   ▓██▒░██▓ ▒██▒  ▒██▒ ░ 
+░ ▒░   ░  ░░▓  ▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒    ▒ ▒▓▒ ▒ ░  ▒ ░░    ▒▒   ▓▒█░░ ▒▓ ░▒▓░  ▒ ░░   
+░  ░      ░ ▒ ░░ ░▒  ░ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░   ░ ░▒  ░ ░    ░      ▒   ▒▒ ░  ░▒ ░ ▒░    ░    
+░      ░    ▒ ░░  ░  ░  ░  ░  ░  ░ ░ ░ ▒     ░   ░ ░    ░  ░  ░    ░        ░   ▒     ░░   ░   ░      
+       ░    ░        ░        ░      ░ ░           ░          ░                 ░  ░   ░              
+                                                                                                      
+
+";
+            }
 
 
-             if (userInput == "felinewarrior")
+            if (userInput == "felinewarrior")
             {
                 string message = "NIIIIIICE! This factions uses hulking Whisker Brute and dander infested Fur Bawlz as its field troops. They have mind tricks naturally produced by their cuteness";
                 Console.WriteLine(message);
-                Console.ReadLine();
+                Console.ReadLine();               
                 storyOfCat();
                 
             }
@@ -68,7 +83,7 @@ namespace MeowMix
                 Console.WriteLine(message);
                 Menu();
             }
-            Console.WriteLine("\n Welcome to the game " + userInput + " member!");
+            Console.WriteLine("\n Your misson is underway " + userInput + "! Proceed with the following scenario.");
             Console.ReadLine();
         }
 
@@ -76,7 +91,9 @@ namespace MeowMix
         {
             Console.Clear();
             Console.WriteLine("The laxative based catnip batch has been completed. You’re inside the room of a SpecOps feline. How will you proceed?");
+
         }
+
 
 
         public static void storyOfHuman()
@@ -90,10 +107,9 @@ namespace MeowMix
         {
             Console.Clear();
             Console.WriteLine("You have successfully infiltrated the backyard. The leader of the Elite k9 unit lays in his dog house fast asleep. What’s your move?");
-            
-
             //Another choice like above
         }
+
         public static void IWENTLEFT()
         {
             Console.Clear();
